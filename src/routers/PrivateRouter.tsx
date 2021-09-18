@@ -8,19 +8,19 @@ import { useLocation, Route } from "react-router-dom";
 import { useAppDispatch } from "../redux/store";
 
 export const PrivateRouter: React.FC<IPrivateRouter> = ({
-  component: Component,
-  layout: Layout,
-  exact,
-  path,
-  header: Header,
-  footer: Footer,
-  isHasFooter,
-  isHasHeader,
-  titleHeader,
-  typeHeader,
-  isHasGradiant,
-  backPath,
-  withoutAvatar,
+	component: Component,
+	layout: Layout,
+	exact,
+	path,
+	header: Header,
+	footer: Footer,
+	isHasFooter,
+	isHasHeader,
+	titleHeader,
+	typeHeader,
+	isHasGradiant,
+	backPath,
+	withoutAvatar,
 }) => {
   const dispatch = useAppDispatch();
 
@@ -36,46 +36,46 @@ export const PrivateRouter: React.FC<IPrivateRouter> = ({
   // let query = new URLSearchParams(useLocation().search).get('text');
 
   return (
-    <Route
-      exact={exact}
-      path={path}
-      render={(props) => {
-        // if (
-        //   !tokenCareer ||
-        //   !tokenComunity ||
-        //   !readCookie(EToken.CAREER_GUIDANCE_ACCESS_KEY) ||
-        //   !readCookie(EToken.COMUNITY_ACCESS_KEY)
-        // ) {
-        //   logout();
-        // }
+		<Route
+		exact={exact}
+		path={path}
+		render={(props) => {
+			// if (
+			//   !tokenCareer ||
+			//   !tokenComunity ||
+			//   !readCookie(EToken.CAREER_GUIDANCE_ACCESS_KEY) ||
+			//   !readCookie(EToken.COMUNITY_ACCESS_KEY)
+			// ) {
+			//   logout();
+			// }
 
-        // if (errorCurrentUser === 401) {
-        //   logout();
-        // }
+			// if (errorCurrentUser === 401) {
+			//   logout();
+			// }
 
-        return (
-          <Layout
-            header={
-              isHasHeader ? (
-                <Header
-                  title={titleHeader}
-                  // titleDynamic={query}
-                  type={typeHeader}
-                  onClick={props.history.goBack}
-                  path={backPath}
-                  // titleRedux={titleRedux}
-                  withoutAvatar={withoutAvatar}
-                />
-              ) : (
-                <></>
-              )
-            }
-            footer={isHasFooter ? <Footer /> : <></>}
-          >
-            <Component {...props} />
-          </Layout>
-        );
-      }}
-    />
+			return (
+			<Layout
+				header={
+				isHasHeader ? (
+					<Header
+					title={titleHeader}
+					// titleDynamic={query}
+					type={typeHeader}
+					onClick={props.history.goBack}
+					path={backPath}
+					// titleRedux={titleRedux}
+					withoutAvatar={withoutAvatar}
+					/>
+				) : (
+					<></>
+				)
+				}
+				footer={isHasFooter ? <Footer /> : <></>}
+			>
+				<Component {...props} />
+			</Layout>
+			);
+		}}
+		/>
   );
 };

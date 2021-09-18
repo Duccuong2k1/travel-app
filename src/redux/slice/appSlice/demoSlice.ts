@@ -9,16 +9,16 @@ const initialState = {
 } as TTnitialState;
 
 export const demoSlice = createSlice({
-  name: 'demo',
-  initialState: initialState,
-  reducers: {
-    doOpenModal(state) {
-      state.isOpen = true;
+    name: 'demo',
+    initialState: initialState,
+    reducers: {
+      doOpenModal(state) {
+        state.isOpen = true;
+      },
+      doCloseModal(state) {
+        state.isOpen = false;
+      },
     },
-    doCloseModal(state) {
-      state.isOpen = false;
-    },
-  },
 });
 
 const { actions, reducer } = demoSlice;
