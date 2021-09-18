@@ -1,9 +1,9 @@
 import React from 'react'
-import './Sidebar.scss';
-export const Sidebar = () => {
+
+export const Destinations = () => {
     return (
         <div>
-            
+            Destinations
         </div>
     )
 }

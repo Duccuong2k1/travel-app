@@ -1,0 +1,57 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    &-contact {
+        &__header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .icon-logo {
+                width: 30px;
+                height: 30px;
+                color: #7960fe;
+            }
+            .name-logo {
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'Gluten', cursive;
+            }
+        }
+        &__body {
+            margin-top: 10px;
+            padding: 10px 0px;
+            p {
+                width: 300px;
+                margin-top: 20px;
+                color: #949cb0;
+            }
+            a {
+                color: #949cb0;
+            }
+            a:hover {
+                color: #6f778f;
+            }
+            li {
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+
+.copyright {
+    border-top: 1px solid #949cb0;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #949cb0;
+    font-weight: 500;
+    div {
+        span {
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,19 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
-// import { Home } from "../containers";
-// import { PrivateRouter } from "./PrivateRouter";
-// import { PublicRouter } from "./PublicRouter";
+import { Switch } from "react-router-dom";
 
-import { Header, Footer } from "../components";
+import { MainLayout } from "../layouts";
+import { About, Blog, Destinations, Home, Tour } from "../pages";
+import { PublicRouter } from "./PublicRouter";
 
 export const Routers = () => {
-  // const buildysURL = process.env.REACT_APP_LINK_BUILDYS;
 
   return (
-    <Router>
+    
       <Switch>
+        <PublicRouter exact component={Home} layout={MainLayout} path="/"/>
+        <PublicRouter  component={About} layout={MainLayout} path="/About"/>
+        <PublicRouter  component={Destinations} layout={MainLayout} path="/Destinations"/>
+        <PublicRouter  component={Tour} layout={MainLayout} path="/Tours"/>
+        <PublicRouter  component={Blog} layout={MainLayout} path="/Blog"/>
+        <PublicRouter  component={Home} layout={MainLayout} path="/ContactUs"/>
         
       </Switch>
-    </Router>
+    
   );
 };

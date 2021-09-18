@@ -1,0 +1,96 @@
+.banner {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    &__info {
+        width: 600px;
+        // flex: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 58px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        p {
+            width: 400px;
+            font-size: 14px;
+            color: #b2b0b6;
+            margin-bottom: 20px;
+            font-weight: 600;
+            line-height: 23px;
+        }
+    }
+    &__imgads {
+        width: 550px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .ads-1,
+        .ads-2 {
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0px 10px 10px rgba(255, 167, 35, 0.3);
+        }
+        &-ads-1 {
+            position: relative;
+            .box {
+                position: absolute;
+                top: 75%;
+                left: 50px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                z-index: 3;
+                width: 140px;
+                box-shadow: 0 10px 10px rgb(250, 151, 38, 0.5);
+                &-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+                &-body {
+                    &__item {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 5px;
+                        img {
+                            width: 35px;
+                            height: 35px;
+                            object-fit: cover;
+                            border-radius: 10px;
+                            margin-right: 10px;
+                        }
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .ads-2 {
+            position: absolute;
+            top: 100px;
+            left: 45%;
+        }
+    }
+}

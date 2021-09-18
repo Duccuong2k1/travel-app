@@ -1,0 +1,8 @@
+.main-layout {
+    background-image: linear-gradient(-95deg, #fdf8f8, #e8eaef);
+    min-height: 100vh;
+    &__content {
+        width: 1240px;
+        margin: 0 auto;
+    }
+}
