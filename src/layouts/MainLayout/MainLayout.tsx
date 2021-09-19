@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Header } from '../../components';
+import { Footer, Header } from '../../components';
 import './MainLayout.scss';
 
 
@@ -9,6 +9,7 @@ export const MainLayout: FC = ({children}) => {
             <div className="main-layout__content">
                 <Header />
                 {children}
+                <Footer />
             </div>
         </div>
     )

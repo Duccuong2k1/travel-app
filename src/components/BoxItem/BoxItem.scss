@@ -1,0 +1,43 @@
+.box-item__tour {
+    width: 300px;
+    margin: 0px 10px;
+    &-img {
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            height: 400px;
+        }
+        .price {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #ffffff;
+            border-radius: 40px;
+            box-shadow: 10px 10px 10px rgba(214, 214, 214, 0.5);
+            padding: 3px 10px;
+            span {
+                color: #6f3cc4;
+                font-weight: 600;
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .box-item__tour-info {
+        h3 {
+            color: #485c70;
+            text-transform: capitalize;
+        }
+        span {
+            color: #949cb0;
+            font-size: 14px;
+        }
+    }
+}

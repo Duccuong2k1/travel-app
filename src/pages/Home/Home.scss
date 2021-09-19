@@ -1,0 +1,65 @@
+.home {
+    &-introduce {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 200px;
+        flex-wrap: wrap;
+        &__left {
+            position: relative;
+            img {
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            iframe {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                border-radius: 15px;
+                height: 250px;
+                width: 300px;
+            }
+            .box {
+                position: absolute;
+                top: 350px;
+                left: 40%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: #ffffff;
+                border-radius: 15px;
+                width: 80px;
+                height: auto;
+                padding: 5px 0px;
+                .icon {
+                    font-size: 40px;
+                }
+                p {
+                    font-weight: 600;
+                    margin: 5px 0px;
+                }
+                span {
+                    font-size: 12px;
+                    color: #b4b2b2;
+                }
+            }
+        }
+        &__right {
+            width: 500px;
+            h3 {
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 55px;
+                margin-bottom: 10px;
+            }
+            p {
+                width: 100%;
+                color: #b4b2b2;
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
