@@ -27,5 +27,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ![image](https://user-images.githubusercontent.com/69525844/133925228-1e45fe47-ce5d-4553-ba60-0c1e25810d1f.png)
 ![image](https://user-images.githubusercontent.com/69525844/133925237-3992da80-482f-4bd7-8e5c-404c4dda8313.png)
 ![image](https://user-images.githubusercontent.com/69525844/133925248-541d5c69-52e4-4268-8189-85a869cda3b8.png)
+![image](https://user-images.githubusercontent.com/69525844/133950560-7cc8a719-6734-479e-818d-f1b300206070.png)
+![image](https://user-images.githubusercontent.com/69525844/133950545-741b5063-18f0-469b-b4ee-d202b1511134.png)
+
 
 
