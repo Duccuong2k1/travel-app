@@ -1,0 +1,16 @@
+.filter-search {
+    margin: 200px 80px 80px 80px;
+    background-color: #fefeff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(138, 138, 138, 0.5);
+    &__wrapper {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-box-input {
+            width: 200px;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+button.slick-next {
+    position: absolute;
+    top: -80px;
+    right: 0px;
+}
+
+button.slick-prev {
+    position: absolute;
+    top: -80px;
+    left: 1160px;
+}
+
+button.slick-next::before,
+button.slick-prev::before {
+    background: transparent;
+    border: 1px solid #651fa9;
+    color: #651fa9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card-slice {
+    margin-top: 80px;
+    padding-top: 50px;
+    &__header {
+        &-title {
+            width: 600px;
+            h3 {
+                font-size: 50px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            p {
+                color: #b2b0b6;
+            }
+        }
+    }
+    &__body {
+        padding: 50px 0px 0px 10px;
+    }
+}
